@@ -1,0 +1,12 @@
+table,th,td{
+    border: 2px solid crimson;
+    border-collapse: collapse;
+    padding: 5px;
+    
+
+}
+.table1{
+    border: 5px solid blue ;
+}
+
+ 
