@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis perspiciatis, architecto alias, aliquid blanditiis officiis id sunt praesentium, magni placeat excepturi porro eaque eius minus. Est vero porro veritatis quos pariatur, eveniet voluptates a! Vero soluta tempore porro cupiditate molestiae distinctio fugit. Possimus, a illo! Obcaecati quod repellat impedit!</p>
+    
+    <input type="button" value="button" id="changeColor">
+    <script>
+        let para = document.getElementById("para");
+        let changeColor=document.getElementById("changeColor");
+        para.addEventListener("mouseover",function testHandler1(){
+            console.log("Mouse os over the paragraph");
+        })
+        para.addEventListener("mouseout",function testHandler1(){
+            console.log("Mouse is out of the paragraph");
+        })
+        changeColor.onclick= function colorchange(){
+            para.style.color="green"
+        }
+        function greet(){
+            console.log("Hello world");
+        }
+        greet();
+
+       // setTimeout(greet,6000)  //messege will be displayed after assigned time.
+    //    let timeOut= setTimeout(greet,6000)  
+    //     clearTimeout(timeOut);       //to stop time out function
+        let interval=setInterval(greet,1000);
+        //clearInterval(interval)
+    </script>
+</body>
+</html>
