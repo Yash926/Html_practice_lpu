@@ -1,0 +1,51 @@
+<!-- #document obective model -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="mainDiv">    <h1>Javascript AND DOM</h1>
+    <!-- <ul>
+        <li>HOME</li>
+        <li>About me</li>
+        <li>Settings</li>
+        <li>Quit</li>
+    </ul>-->
+<p id="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic excepturi id ratione mollitia accusantium odio incidunt ut a vel, veniam quos ea! Aspernatur labore a nesciunt numquam, iste, repudiandae consequuntur cupiditate velit unde tempore dolor nulla, quod magni deleniti ducimus distinctio ipsum exercitationem aliquid! Voluptatibus odio dolorum sunt quasi.
+</p>
+<!-- <input type="button" value="Alert" onclick="giveAlert()"> -->
+<!-- <input type="button" value="Alert" type="alertButton"> -->
+<input type="button" value="toggle" id="toggleButton">
+
+</div> 
+<script>
+    let toggleButton=document.getElementById("toggleButton");
+    let para=document.getElementById("para");
+    toggleButton.onclick=function toggleVisibility()
+    {
+        if (para.style.display !="none")
+        {
+            para.style.display="none";
+        }
+        else
+        {
+            para.style.display="block";
+        }
+    }
+//    let mainDiv = document.getElementById("mainDiv");
+//    console.log(mainDiv);
+//    function giveAlert(){
+//     alert("Clicked on button");
+//    }
+// let alertButton=document.getElementById("AlertButton");
+// alertButton.onclick=function giveAlert()
+// {
+//     alert("clicked on button");
+// }
+</script>
+</body>
+</html>
